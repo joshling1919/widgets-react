@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Tabs from './tabs';
-import WeatherClock from "./weatherClock";
+// import WeatherClock from "./weatherClock";
+import Autocomplete from './autocomplete';
 
 class Widgets extends React.Component {
 
@@ -9,7 +10,14 @@ class Widgets extends React.Component {
     return(
       <div>
         <Tabs data={[{title: "one", content:"I am the first"}, {title: "two", content: "Second pane here"}, {title: "three", content: "Third pane here"}]}/>
-        <WeatherClock/>
+        <Autocomplete names={[
+                              {name: "Tom"},
+                              {name: "Dick"},
+                              {name: "Harry"},
+                              {name: "Tony"},
+                              {name: "Nye"}
+                            ]}
+        />
       </div>
     );
   }

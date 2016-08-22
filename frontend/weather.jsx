@@ -55,7 +55,6 @@ class Weather extends React.Component{
 
   componentDidMount() {
     navigator.geolocation.getCurrentPosition(this.setPosition.bind(this));
-    // this.getWeather();
   }
 
 

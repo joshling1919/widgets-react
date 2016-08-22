@@ -60,9 +60,9 @@
 	
 	var _tabs2 = _interopRequireDefault(_tabs);
 	
-	var _weatherClock = __webpack_require__(173);
+	var _autocomplete = __webpack_require__(176);
 	
-	var _weatherClock2 = _interopRequireDefault(_weatherClock);
+	var _autocomplete2 = _interopRequireDefault(_autocomplete);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -71,6 +71,8 @@
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	// import WeatherClock from "./weatherClock";
+	
 	
 	var Widgets = function (_React$Component) {
 	  _inherits(Widgets, _React$Component);
@@ -88,7 +90,8 @@
 	        'div',
 	        null,
 	        _react2.default.createElement(_tabs2.default, { data: [{ title: "one", content: "I am the first" }, { title: "two", content: "Second pane here" }, { title: "three", content: "Third pane here" }] }),
-	        _react2.default.createElement(_weatherClock2.default, null)
+	        _react2.default.createElement(_autocomplete2.default, { names: [{ name: "Tom" }, { name: "Dick" }, { name: "Harry" }, { name: "Tony" }, { name: "Nye" }]
+	        })
 	      );
 	    }
 	  }]);
@@ -21535,137 +21538,10 @@
 	exports.default = Tabs;
 
 /***/ },
-/* 173 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _clock = __webpack_require__(174);
-	
-	var _clock2 = _interopRequireDefault(_clock);
-	
-	var _weather = __webpack_require__(175);
-	
-	var _weather2 = _interopRequireDefault(_weather);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var WeatherClock = function (_React$Component) {
-	  _inherits(WeatherClock, _React$Component);
-	
-	  function WeatherClock() {
-	    _classCallCheck(this, WeatherClock);
-	
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(WeatherClock).apply(this, arguments));
-	  }
-	
-	  _createClass(WeatherClock, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'div',
-	        null,
-	        _react2.default.createElement(_clock2.default, null),
-	        _react2.default.createElement(_weather2.default, null)
-	      );
-	    }
-	  }]);
-	
-	  return WeatherClock;
-	}(_react2.default.Component);
-	
-	exports.default = WeatherClock;
-
-/***/ },
-/* 174 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var Clock = function (_React$Component) {
-	  _inherits(Clock, _React$Component);
-	
-	  function Clock() {
-	    _classCallCheck(this, Clock);
-	
-	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Clock).call(this));
-	
-	    _this.state = {
-	      time: new Date()
-	    };
-	    return _this;
-	  }
-	
-	  _createClass(Clock, [{
-	    key: 'componentDidMount',
-	    value: function componentDidMount() {
-	      var _this2 = this;
-	
-	      window.setInterval(function () {
-	        _this2.setState({ time: new Date() });
-	      }, 1000);
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'div',
-	        null,
-	        _react2.default.createElement(
-	          'div',
-	          null,
-	          ' clock is here'
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          null,
-	          this.state.time.toTimeString()
-	        )
-	      );
-	    }
-	  }]);
-	
-	  return Clock;
-	}(_react2.default.Component);
-	
-	exports.default = Clock;
-
-/***/ },
-/* 175 */
+/* 173 */,
+/* 174 */,
+/* 175 */,
+/* 176 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -21688,107 +21564,63 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	var Weather = function (_React$Component) {
-	  _inherits(Weather, _React$Component);
+	var Autocomplete = function (_React$Component) {
+	  _inherits(Autocomplete, _React$Component);
 	
-	  function Weather() {
-	    _classCallCheck(this, Weather);
+	  function Autocomplete(props) {
+	    _classCallCheck(this, Autocomplete);
 	
-	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Weather).call(this));
+	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Autocomplete).call(this, props));
 	
-	    _this.state = {
-	      latitude: "",
-	      longitude: "",
-	      description: '',
-	      temperature: '',
-	      city: ''
-	    };
+	    _this.updateList = _this.updateList.bind(_this);
+	    _this.state = { names: _this.props.names,
+	      search: "" };
 	    return _this;
 	  }
 	
-	  _createClass(Weather, [{
-	    key: "formatTemperature",
-	    value: function formatTemperature(kelvin) {
-	      return (kelvin - 273) * 1.8 + 32;
-	    }
-	  }, {
-	    key: "setDescription",
-	    value: function setDescription(message) {
-	      var description = JSON.parse(message.target.response).weather[0].description;
-	      var city = JSON.parse(message.target.response).name;
-	      var temperature = this.formatTemperature(JSON.parse(message.target.response).main.temp);
-	      this.setState({ description: description, city: city, temperature: temperature });
-	    }
-	  }, {
-	    key: "getWeather",
-	    value: function getWeather() {
-	      var request = new XMLHttpRequest();
-	      request.open('GET', "http://api.openweathermap.org/data/2.5/weather?lat=" + this.state.latitude + "&lon=" + this.state.longitude + "&appid=645c5d39c7603f17e23fcaffcea1a3c1", true);
-	
-	      request.onload = this.setDescription.bind(this);
-	
-	      //  message => {
-	      //   if (request.status === 200) {
-	      //     this.setDescription.bind(this, message);
-	      //   } else {
-	      //     console.log("wasn't 200");
-	      //   }
-	      // };
-	
-	      request.onerror = function (message) {
-	        console.log(message);
-	      };
-	      request.send();
-	    }
-	  }, {
-	    key: "setPosition",
-	    value: function setPosition(position) {
-	      var _this2 = this;
-	
-	      this.setState({ latitude: position.coords.latitude,
-	        longitude: position.coords.longitude }, function () {
-	        _this2.getWeather();
+	  _createClass(Autocomplete, [{
+	    key: "updateList",
+	    value: function updateList(e) {
+	      e.preventDefault();
+	      var search = e.target.value;
+	      var currentNames = [];
+	      this.props.names.forEach(function (name) {
+	        var sliced = name.name.slice(0, search.length);
+	        if (sliced === search) {
+	          currentNames.push(name);
+	        }
 	      });
-	    }
-	  }, {
-	    key: "componentDidMount",
-	    value: function componentDidMount() {
-	      navigator.geolocation.getCurrentPosition(this.setPosition.bind(this));
-	      // this.getWeather();
+	      this.setState({ names: currentNames, search: search });
 	    }
 	  }, {
 	    key: "render",
 	    value: function render() {
+	
+	      var names = this.state.names.map(function (name, idx) {
+	        return _react2.default.createElement(
+	          "li",
+	          { key: idx, value: name.name },
+	          name.name
+	        );
+	      });
+	      console.log(names);
 	      return _react2.default.createElement(
 	        "div",
 	        null,
+	        _react2.default.createElement("input", { onChange: this.updateList, type: "text", value: this.state.search }),
 	        _react2.default.createElement(
 	          "ul",
 	          null,
-	          _react2.default.createElement(
-	            "li",
-	            null,
-	            this.state.city
-	          ),
-	          _react2.default.createElement(
-	            "li",
-	            null,
-	            this.state.temperature
-	          ),
-	          _react2.default.createElement(
-	            "li",
-	            null,
-	            this.state.description
-	          )
+	          names
 	        )
 	      );
 	    }
 	  }]);
 	
-	  return Weather;
+	  return Autocomplete;
 	}(_react2.default.Component);
 	
-	exports.default = Weather;
+	exports.default = Autocomplete;
 
 /***/ }
 /******/ ]);
